@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Gmail Suite]" parallel="tests">
+  <test name="flipkart(failed)" parallel="tests">
+    <classes>
+      <class name="Suite2.Snapdeal">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Suite2.Snapdeal -->
+      <class name="Suite1.Flipkart">
+        <methods>
+          <include name="init"/>
+          <include name="logout"/>
+          <include name="buyAndRemoveFromCart"/>
+          <include name="searchAndSelectProduct"/>
+          <include name="quit"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Suite1.Flipkart -->
+    </classes>
+  </test> <!-- flipkart(failed) -->
+  <test name="Myntra(failed)" parallel="tests">
+    <classes>
+      <class name="Suite2.Snapdeal">
+        <methods>
+          <include name="init"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="searchAndSelectProduct"/>
+          <include name="buyAndRemoveFromCart"/>
+        </methods>
+      </class> <!-- Suite2.Snapdeal -->
+      <class name="Suite1.Flipkart">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- Suite1.Flipkart -->
+    </classes>
+  </test> <!-- Myntra(failed) -->
+</suite> <!-- Failed suite [Gmail Suite] -->

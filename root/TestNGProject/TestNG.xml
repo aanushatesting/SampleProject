@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite  name="Gmail Suite" thread-count="1" verbose="1" annotations="JDK" parallel="tests">
+         
+  <test name="Flipcart">
+	 <classes>
+	   <class name="Suite1.Flipkart"/>
+	 </classes>
+   </test>
+   
+  <test name="Myntra">
+     <classes>
+       <class name="Suite2.Snapdeal"/>
+     </classes>
+   </test>
+</suite>

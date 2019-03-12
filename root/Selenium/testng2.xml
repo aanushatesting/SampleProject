@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite  name="Suite" thread-count="3" verbose="1" annotations="JDK" parallel="tests">
+         
+  <test name="Regression">
+	 <classes>
+	   <class name="seleniumScript.DDDemo"/>
+	 </classes>
+   </test>
+   
+  <test name="Regression">
+     <classes>
+       <class name="seleniumScript.FileUpload"/>
+     </classes>
+   </test>
+   <test name="Regression">
+     <classes>
+       <class name="seleniumScript.DragNDrop"/>
+     </classes>
+   </test>
+</suite>

@@ -1,0 +1,557 @@
+<html>
+<head>
+<title>TestNG:  FirefoxTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>FirefoxTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 05 15:59:00 PST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>78 seconds (78780 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumpack.multiBrowserTesting.launchapp()'><b>launchapp</b><br>Test class: seleniumpack.multiBrowserTesting<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: D:\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$0(ChromeDriverService.java:1)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+	at seleniumpack.multiBrowserTesting.launchapp(multiBrowserTesting.java:27)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1060361815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1060361815'><pre>java.lang.IllegalStateException: The driver executable does not exist: D:\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$0(ChromeDriverService.java:1)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+	at seleniumpack.multiBrowserTesting.launchapp(multiBrowserTesting.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>4</td>
+<td>seleniumpack.multiBrowserTesting@1b604f19</td></tr>
+<tr>
+<td title='seleniumpack.multiBrowserTesting.launchapp()'><b>launchapp</b><br>Test class: seleniumpack.multiBrowserTesting<br>Parameters: Firefox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ode.com in app-profile
+1517875194592	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1517875194594	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1517875194595	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1517875194596	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1517875194599	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1517875194602	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1517875194603	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1517875194604	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1517875194606	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1517875194607	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1517875194608	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1517875194612	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1517875194614	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1517875194618	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1517875194620	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1517875194622	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1517875194626	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1517875194627	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1517875194629	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1517875194631	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1517875194634	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1517875194639	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1517875194674	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1517875194677	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1517875194678	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\welcome\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1517875200535	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1517875202175	addons.productaddons	INFO	Completed downloading document
+1517875210274	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875210374	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-1c4de3
+1517875214716	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875214728	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-272214
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Admin&apos;, ip: &apos;192.168.2.5&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at seleniumpack.multiBrowserTesting.launchapp(multiBrowserTesting.java:20)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ode.com in app-profile
+1517875194592	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1517875194594	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1517875194595	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1517875194596	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1517875194599	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1517875194602	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1517875194603	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1517875194604	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1517875194606	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1517875194607	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1517875194608	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1517875194612	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1517875194614	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1517875194618	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1517875194620	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1517875194622	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1517875194626	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1517875194627	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1517875194629	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1517875194631	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1517875194634	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1517875194639	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1517875194674	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1517875194677	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1517875194678	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\welcome\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1517875200535	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1517875202175	addons.productaddons	INFO	Completed downloading document
+1517875210274	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875210374	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-1c4de3
+1517875214716	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875214728	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-272214
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 25 more
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace989638415", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace989638415'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ode.com in app-profile
+1517875194592	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1517875194594	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1517875194595	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1517875194596	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1517875194599	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1517875194602	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1517875194603	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1517875194604	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1517875194606	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1517875194607	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1517875194608	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1517875194612	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1517875194614	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1517875194618	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1517875194620	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1517875194622	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1517875194626	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1517875194627	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1517875194629	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1517875194631	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1517875194634	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1517875194639	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1517875194674	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1517875194677	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1517875194678	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\welcome\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1517875200535	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1517875202175	addons.productaddons	INFO	Completed downloading document
+1517875210274	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875210374	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-1c4de3
+1517875214716	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875214728	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-272214
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Admin&apos;, ip: &apos;192.168.2.5&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at seleniumpack.multiBrowserTesting.launchapp(multiBrowserTesting.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ode.com in app-profile
+1517875194592	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1517875194594	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1517875194595	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1517875194596	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1517875194599	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1517875194602	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1517875194603	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1517875194604	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1517875194606	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1517875194607	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1517875194608	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1517875194612	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1517875194614	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1517875194618	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1517875194620	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1517875194622	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1517875194626	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1517875194627	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1517875194629	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1517875194631	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1517875194634	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1517875194639	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1517875194674	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1517875194677	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1517875194678	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\welcome\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1517875200535	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1517875202175	addons.productaddons	INFO	Completed downloading document
+1517875210274	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875210374	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-1c4de3
+1517875214716	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875214728	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-272214
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 25 more
+</pre></div></td>
+<td>78</td>
+<td>seleniumpack.multiBrowserTesting@56f4468b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumpack.multiBrowserTesting.closeBrowser()'><b>closeBrowser</b><br>Test class: seleniumpack.multiBrowserTesting</td>
+<td></td>
+<td>0</td>
+<td>seleniumpack.multiBrowserTesting@1b604f19</td></tr>
+<tr>
+<td title='seleniumpack.multiBrowserTesting.closeBrowser()'><b>closeBrowser</b><br>Test class: seleniumpack.multiBrowserTesting</td>
+<td></td>
+<td>0</td>
+<td>seleniumpack.multiBrowserTesting@56f4468b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumpack.multiBrowserTesting.calculatepercent()'><b>calculatepercent</b><br>Test class: seleniumpack.multiBrowserTesting</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ode.com in app-profile
+1517875194592	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1517875194594	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1517875194595	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1517875194596	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1517875194599	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1517875194602	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1517875194603	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1517875194604	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1517875194606	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1517875194607	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1517875194608	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1517875194612	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1517875194614	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1517875194618	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1517875194620	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1517875194622	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1517875194626	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1517875194627	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1517875194629	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1517875194631	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1517875194634	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1517875194639	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1517875194674	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1517875194677	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1517875194678	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\welcome\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1517875200535	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1517875202175	addons.productaddons	INFO	Completed downloading document
+1517875210274	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875210374	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-1c4de3
+1517875214716	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875214728	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-272214
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Admin&apos;, ip: &apos;192.168.2.5&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at seleniumpack.multiBrowserTesting.launchapp(multiBrowserTesting.java:20)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ode.com in app-profile
+1517875194592	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1517875194594	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1517875194595	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1517875194596	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1517875194599	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1517875194602	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1517875194603	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1517875194604	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1517875194606	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1517875194607	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1517875194608	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1517875194612	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1517875194614	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1517875194618	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1517875194620	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1517875194622	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1517875194626	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1517875194627	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1517875194629	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1517875194631	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1517875194634	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1517875194639	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1517875194674	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1517875194677	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1517875194678	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\welcome\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1517875200535	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1517875202175	addons.productaddons	INFO	Completed downloading document
+1517875210274	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875210374	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-1c4de3
+1517875214716	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875214728	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-272214
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 25 more
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace276220119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace276220119'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ode.com in app-profile
+1517875194592	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1517875194594	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1517875194595	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1517875194596	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1517875194599	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1517875194602	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1517875194603	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1517875194604	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1517875194606	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1517875194607	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1517875194608	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1517875194612	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1517875194614	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1517875194618	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1517875194620	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1517875194622	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1517875194626	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1517875194627	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1517875194629	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1517875194631	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1517875194634	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1517875194639	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1517875194674	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1517875194677	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1517875194678	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\welcome\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1517875200535	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1517875202175	addons.productaddons	INFO	Completed downloading document
+1517875210274	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875210374	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-1c4de3
+1517875214716	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875214728	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-272214
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Admin&apos;, ip: &apos;192.168.2.5&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at seleniumpack.multiBrowserTesting.launchapp(multiBrowserTesting.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ode.com in app-profile
+1517875194592	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1517875194594	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1517875194595	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1517875194596	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1517875194599	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1517875194602	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1517875194603	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1517875194604	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1517875194606	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1517875194607	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1517875194608	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1517875194612	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1517875194614	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1517875194618	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1517875194620	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1517875194622	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1517875194626	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1517875194627	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1517875194629	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1517875194631	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1517875194634	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1517875194639	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1517875194674	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1517875194677	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1517875194678	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+Unable to read VR Path Registry from C:\Users\welcome\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1517875200535	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1517875202175	addons.productaddons	INFO	Completed downloading document
+1517875210274	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875210374	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-1c4de3
+1517875214716	addons.productaddons	INFO	downloadXHR File download. status=200
+1517875214728	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\welcome\AppData\Local\Temp\tmpaddon-272214
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>seleniumpack.multiBrowserTesting@56f4468b</td></tr>
+</table><p>
+</body>
+</html>

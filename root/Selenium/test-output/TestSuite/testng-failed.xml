@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="seleniumpack.multiBrowserTesting">
+        <methods>
+          <include name="launchapp"/>
+          <include name="closeBrowser"/>
+          <include name="calculatepercent"/>
+        </methods>
+      </class> <!-- seleniumpack.multiBrowserTesting -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="InternetExplorer(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="seleniumpack.multiBrowserTesting">
+        <methods>
+          <include name="launchapp"/>
+          <include name="closeBrowser"/>
+          <include name="calculatepercent"/>
+        </methods>
+      </class> <!-- seleniumpack.multiBrowserTesting -->
+    </classes>
+  </test> <!-- InternetExplorer(failed) -->
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="seleniumpack.multiBrowserTesting">
+        <methods>
+          <include name="launchapp"/>
+          <include name="closeBrowser"/>
+          <include name="calculatepercent"/>
+        </methods>
+      </class> <!-- seleniumpack.multiBrowserTesting -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

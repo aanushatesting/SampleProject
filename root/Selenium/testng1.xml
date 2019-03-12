@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite  name="Suite" thread-count="2" verbose="1" annotations="JDK" parallel="tests">
+         
+  <test name="Regression">
+	 <classes>
+	   <class name="seleniumScript.BrowserHistory"/>
+	 </classes>
+   </test>
+   
+  <test name="Regression">
+     <classes>
+       <class name="seleniumScript.BrowserSlider"/>
+     </classes>
+   </test>
+</suite>
